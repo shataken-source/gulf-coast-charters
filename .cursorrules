@@ -1,0 +1,33 @@
+# Gulf Coast Charters - Project Context for Cursor
+
+## Project Overview
+- Next.js 14 charter booking platform
+- Supabase backend (project: rdbuwyefbgnbuhmjrizo)
+- TailwindCSS styling
+- 21-table database structure
+
+## Key Files
+- Database setup: COMPLETE_DATABASE_SETUP.sql
+- Main config: next.config.js
+- Package info: package.json
+- Deployment configs: vercel.json, netlify.toml
+
+## Supabase Info
+- Project URL: https://rdbuwyefbgnbuhmjrizo.supabase.co
+- Database tables: 21 tables (profiles, captains, bookings, reviews, etc.)
+
+## Current Status
+- All code complete
+- Database setup ready
+- Needs deployment to production
+
+## Deployment Goal
+- Deploy to Vercel or Netlify
+- Add environment variables for Supabase connection
+- Go live with platform
+
+## Important Notes
+- Authentication using Supabase Auth
+- Image optimization with Sharp
+- GPS tracking with Leaflet
+- Real-time features with Supabase subscriptions

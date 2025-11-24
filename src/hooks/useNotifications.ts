@@ -38,7 +38,7 @@ export function useNotifications() {
         console.error('Error fetching notifications:', error);
       } else {
         setNotifications(data || []);
-        setUnreadCount(data?.filter(n => !n.read).length || 0);
+        setUnreadCount(data?.filter((n: any) => !n.read).length || 0);
       }
       setLoading(false);
     };
@@ -52,7 +52,7 @@ export function useNotifications() {
         event: 'INSERT',
         schema: 'public',
         table: 'notifications'
-      }, (payload) => {
+      }, (payload: any) => {
         const newNotification = payload.new as Notification;
         setNotifications(prev => [newNotification, ...prev]);
         setUnreadCount(prev => prev + 1);
@@ -67,7 +67,7 @@ export function useNotifications() {
         event: 'UPDATE',
         schema: 'public',
         table: 'notifications'
-      }, (payload) => {
+      }, (payload: any) => {
         const updated = payload.new as Notification;
         setNotifications(prev => 
           prev.map(n => n.id === updated.id ? updated : n)

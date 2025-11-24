@@ -49,7 +49,7 @@ export async function subscribeToPush(userId: string): Promise<PushSubscription 
 
     const subscription = await registration.pushManager.subscribe({
       userVisibleOnly: true,
-      applicationServerKey
+      applicationServerKey: applicationServerKey as BufferSource
     });
 
     // Store subscription in database

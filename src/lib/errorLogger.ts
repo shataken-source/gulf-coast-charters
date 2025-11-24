@@ -9,7 +9,7 @@ export interface ErrorContext {
 export const logError = (error: Error, context?: ErrorContext) => {
   console.error('Error:', error.message, context);
   
-  if (import.meta.env.PROD) {
+  if (process.env.NODE_ENV === 'production') {
     // Error logging disabled - Sentry not configured
     console.error('Production error:', error, context);
   }
@@ -22,7 +22,7 @@ export const logMessage = (
 ) => {
   console[level === 'error' ? 'error' : level === 'warning' ? 'warn' : 'log'](message, context);
   
-  if (import.meta.env.PROD) {
+  if (process.env.NODE_ENV === 'production') {
     // Message logging disabled - Sentry not configured
   }
 };

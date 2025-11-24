@@ -63,7 +63,7 @@ export async function optimisticBooking(
       async () => {
         await supabase.from('bookings').delete().eq('id', bookingData.id);
       }
-    );
+    ) as any;
 
     if (bookingError) throw bookingError;
 
@@ -82,7 +82,7 @@ export async function optimisticBooking(
           .eq('captain_id', captainId)
           .eq('date', date);
       }
-    );
+    ) as any;
 
     if (updateError) throw new Error('Booking conflict - date taken');
 

@@ -35,7 +35,7 @@ export function useOfflineBooking() {
       return await sendBooking(bookingData);
     } else {
       // Offline: queue for later
-      await backgroundSync.addPendingBooking(bookingData);
+      await backgroundSync.addPendingBooking(bookingData as any);
       await loadPendingCount();
       return { success: true, offline: true };
     }

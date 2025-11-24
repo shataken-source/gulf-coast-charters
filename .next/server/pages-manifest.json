@@ -1,7 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/admin/campaigns/new": "pages/admin/campaigns/new.js",
-  "/test-email": "pages/test-email.js"
-}
+{"/_app":"pages/_app.js","/admin/campaigns":"pages/admin/campaigns.html","/_error":"pages/_error.js","/admin":"pages/admin.html","/admin/test":"pages/admin/test.html","/admin/campaigns/new":"pages/admin/campaigns/new.html","/api/admin/campaigns/[id]/send":"pages/api/admin/campaigns/[id]/send.js","/api/admin/campaigns":"pages/api/admin/campaigns.js","/api/admin/users":"pages/api/admin/users.js","/api/send-test-email":"pages/api/send-test-email.js","/":"pages/index.html","/captains":"pages/captains.html","/test-email":"pages/test-email.html","/_document":"pages/_document.js","/404":"pages/404.html"}
