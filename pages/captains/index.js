@@ -1,39 +1,21 @@
-﻿import { useState, useEffect } from 'react';
-import Layout from '@/components/Layout';
-import { supabase } from '@/lib/supabase';
+import { useState, useEffect } from 'react'
+import Layout from '@/components/Layout'
+import { db } from '@/lib/supabase'
 
 export default function Captains({ session }) {
-  const [captains, setCaptains] = useState([]);
-  const [loading, setLoading] = useState(true);
-
+  const [captains, setCaptains] = useState([])
+  const [loading, setLoading] = useState(true)
+ECHO is off.
   useEffect(() => {
-    const fetchCaptains = async () => {
-      const { data } = await supabase.from('captains').select('*');
-      setCaptains(data || []);
-      setLoading(false);
-    };
-    fetchCaptains();
-  }, []);
-
+    db.getCaptains().then(setCaptains).finally(() => setLoading(false))
+  }, [])
+ECHO is off.
   return (
     <Layout session={session}>
       <div className="max-w-7xl mx-auto p-8">
         <h1 className="text-4xl font-bold mb-8">Find Your Captain</h1>
-        {loading ? (
-          <p>Loading...</p>
-        ) : captains.length === 0 ? (
-          <p>No captains yet</p>
-        ) : (
-          <div className="grid grid-cols-3 gap-6">
-            {captains.map(c => (
-              <div key={c.id} className="bg-white p-6 rounded shadow">
-                <h3 className="font-bold">{c.boat_name}</h3>
-                <p className="text-blue-600 font-bold mt-2">${c.hourly_rate}/hr</p>
-              </div>
-            ))}
-          </div>
-        )}
+        {loading ? <p>Loading...</p> : captains.length === 0 ? <p>No captains yet</p> : <div className="grid grid-cols-3 gap-6">{captains.map(c => <div key={c.id} className="bg-white p-6 rounded shadow"><h3 className="font-bold">{c.boat_name}</h3><p className="text-blue-600 font-bold mt-2">${c.hourly_rate}/hr</p></div>)}</div>}
       </div>
     </Layout>
-  );
+  )
 }

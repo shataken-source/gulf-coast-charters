@@ -1,1 +1,18 @@
-self.__BUILD_MANIFEST={polyfillFiles:["static/chunks/polyfills-42372ed130431b0a.js"],devFiles:[],ampDevFiles:[],lowPriorityFiles:[],rootMainFiles:[],pages:{"/":["static/chunks/webpack-87b3a303122f2f0d.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-136f492733695fc4.js","static/chunks/pages/index-80e22a6fae11001c.js"],"/_app":["static/chunks/webpack-87b3a303122f2f0d.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-136f492733695fc4.js","static/css/2da31046d4c5d2a7.css","static/chunks/pages/_app-87cee5540118d1b4.js"],"/_error":["static/chunks/webpack-87b3a303122f2f0d.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-136f492733695fc4.js","static/chunks/pages/_error-7a92967bea80186d.js"],"/admin":["static/chunks/webpack-87b3a303122f2f0d.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-136f492733695fc4.js","static/chunks/pages/admin-b35a58d90d90803f.js"],"/admin/campaigns":["static/chunks/webpack-87b3a303122f2f0d.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-136f492733695fc4.js","static/chunks/pages/admin/campaigns-52d7ee3342172037.js"],"/admin/campaigns/new":["static/chunks/webpack-87b3a303122f2f0d.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-136f492733695fc4.js","static/chunks/pages/admin/campaigns/new-3b6cbfc3aff581d9.js"],"/admin/test":["static/chunks/webpack-87b3a303122f2f0d.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-136f492733695fc4.js","static/chunks/pages/admin/test-1e561209c8076714.js"],"/captains":["static/chunks/webpack-87b3a303122f2f0d.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-136f492733695fc4.js","static/chunks/830-c2485df863b60b20.js","static/chunks/pages/captains-e60ff53baa57372d.js"],"/test-email":["static/chunks/webpack-87b3a303122f2f0d.js","static/chunks/framework-64ad27b21261a9ce.js","static/chunks/main-136f492733695fc4.js","static/chunks/pages/test-email-9564cae8e99d9a89.js"]},ampFirstPages:[]},self.__BUILD_MANIFEST.lowPriorityFiles=["/static/"+process.env.__NEXT_BUILD_ID+"/_buildManifest.js",,"/static/"+process.env.__NEXT_BUILD_ID+"/_ssgManifest.js"];
+self.__BUILD_MANIFEST = {
+  "polyfillFiles": [
+    "static/chunks/polyfills.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/_app": []
+  },
+  "ampFirstPages": []
+};
+self.__BUILD_MANIFEST.lowPriorityFiles = [
+"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
+,"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js",
+
+];

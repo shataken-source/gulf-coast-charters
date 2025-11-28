@@ -1,0 +1,2 @@
+-- Cron admin migration
+-- See complete-schema.sql for full cron_jobs and cron_logs tables
